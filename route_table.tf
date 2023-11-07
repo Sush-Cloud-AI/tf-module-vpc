@@ -27,7 +27,7 @@ resource "aws_route_table_association" "public_subnet_rt_association" {
 }
 
 
-# create public route table 
+# create private route table 
 resource "aws_route_table" "private_rt" {
   vpc_id = aws_vpc.main.id
 
