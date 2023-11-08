@@ -27,10 +27,10 @@ output "PRIVATE_SUBNET_CIDR" {
 
 
 output "PRIVATE_SUBNET_IDS" {
-    value = aws_subnet.private_subnet.id
+    value = aws_subnet.private_subnet.*.id
   
 }
 
 output "PUBLIC_SUBNET_IDS" {
-    value = aws_subnet.public_subnet.id
+    value = aws_subnet.public_subnet.*.id
 }
